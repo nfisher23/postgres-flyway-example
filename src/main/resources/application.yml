@@ -1,0 +1,13 @@
+spring.profiles.active: dev
+
+---
+spring.profiles: dev
+spring.flyway.enabled: false
+
+---
+spring.profiles: stage
+spring.flyway.enabled: false
+spring.datasource.password: postgres
+spring.datasource.username: postgres
+spring.datasource.url: jdbc:postgresql://192.168.56.111:5432/testdb
+spring.datasource.driver-class-name: org.postgresql.Driver
